@@ -19,3 +19,8 @@ Para a estilização do site existem dois arquivos, o [style.css](https://github
 
 ## Javascript:
 No [mobile-navbar.js](https://github.com/LeonardaSaad/Your-Home/blob/main/src/script/mobile-navbar.js) está o script de funcionamento da responsividade do menu da nav bar, incluindo animações de movimento e evento de clique, que ao ser acionado inicia a animação do *mobile-menu*.
+
+## Ferramentas:
+- Figma
+- Visual Studio Code
+- Live Server (extensão para VSCode)
