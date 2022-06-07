@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+/* 
+* #005BBC  -> Azul bandeira
+* #0045AD  -> Azul b escuro
+* #0075D6  -> Azul claro
+* #D7D6B5  -> Bege
+* #FFD600  -> Amarelo bandeira
+* #E6B11D  -> Amarelo b escuro
+*/
+
+:root {
+    --bg: #FFFFFF;
+    /* Background color*/
+
+    /* Ukraine flag */
+    --uFlag1: #0045AD;
+    --uFlag2: #FFD600;
+
+    /*  Color nav */
+    --nav-color: #ffffff;
+    /* Primary color nav text */
+    --nav-color2: #0045AD;
+    /* Secondary color nav text */
+    --nav-color3: #E6B11D;
+    /* Tertiary color nav text */
+
+    /* Text colors */
+    /* Primary color text */
+    --colorB: #000;
+    /* Secondary color text */
+    --colorW: #fff;
+    --colorG: rgb(117, 117, 117);
+
+    /* Cards color */
+    --card-bg: #fff;
+    /* Card background */
+
+    /* Buttons colors */
+    --button-bg: #FFD600;
+    /* Primary color button background */
+
+    /* Footer */
+    --footer-bg: #ffd500be;
+    /* Footer background color */
+    --footer-color: #ffffff;
+    /* Footer color text */
+
+    /* Form */
+    --form: rgba(255, 255, 255);
+
+    /* Extras */
+    --shadow: rgb(0, 0, 0, 0.3);
+    --white: #ffffff;
+    --black: #000;
+}
+
+
+/* Class to center */
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ 
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .06em;
+    background: var(--black);
+    color: var(--colorB);
+}
+
+main {
+    background-size: cover;
+    height: 92vh;
+}
+
+
+/* Nav bar */
+a {
+    color: var(--colorW);
+    text-decoration: none;
+}
+
+.a-menu {
+    color: var(--colorW);
+}
+
+a:hover {
+    text-decoration: underline .15em var(--nav-color3);
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    z-index: 5;
+    font-family: 'Amatic SC', cursive;
+}
+
+.logo {
+    font-size: 4vw;
+    letter-spacing: 2px;
+}
+
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .logo {
+        font-size: 3.5vw;
+    }
+}
+
+
+
+/* *! ----------------------------- */
+/* H1, H2, H2, H3, p, button*/
+h1 {
+    font-size: 2vw;
+}
+
+h2 {
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 0;
+    letter-spacing: 0;
+}
+
+h3 {
+    font-size: 1.5vw;
+    margin-top: 0;
+    margin-bottom: 2vh;
+    letter-spacing: 0;
+}
+
+p {
+    margin: 0;
+    font-size: 1.2vw;
+    text-align: justify;
+    letter-spacing: 0;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+button {
+    background: var(--button-bg);
+    color: var(--colorB);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+    font-weight: bold;
+    text-align: center;
+    padding: 2% 20% 2% 20%;
+    border: none;
+    border-radius: 1vh;
+    box-shadow: 0 .15em .2em var(--shadow);
+}
+
+
+/* flag */
+.flag {
+    width: 100%;
+    height: 95vh;
+    z-index: 4;
+}
+
+.flag-part1 {
+    background: var(--uFlag1);
+    opacity: 0.8;
+    width: 1005;
+    height: calc((100vh - 5vh) / 2);
+}
+
+.flag-part2 {
+    background: var(--uFlag2);
+    opacity: 0.8;
+    width: 100%;
+    height: calc((100vh - 5vh) / 2);
+}
+
+
+/* login area */
+.container {
+    width: 100%;
+    height: 85vh;
+    top: 10vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background: white;
+    width: 30vw;
+    padding: 8vh 5vw 8vh 5vw;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* "Digite seus dados" */
+h3 {
+    margin-bottom: 4vh;
+}
+
+input {
+    font-size: 1.1vw;
+}
+
+/* Input:text ==> Email e senha */
+#email,
+#senha {
+    width: 96%;
+    padding: .8vw 0 .8vw 4%;
+    margin-bottom: 3.5vh;
+    background: white;
+    border: .1vw solid var(--shadow);
+    border-radius: .5vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#senha {
+    margin-bottom: 1vh;
+}
+
+#email:focus,
+#senha:focus {
+    outline: none;
+    border: none;
+    border-bottom: .3vw solid var(--uFlag1);
+}
+
+/* "Esqueci minha senha." */
+.esqueciS {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1vw;
+    text-decoration: underline var(--colorG);
+    color: var(--colorG);
+}
+
+/* Botão "Entrar" */
+#entrar {
+    background: var(--button-bg);
+    color: var(--colorB);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 600;
+
+    width: 100%;
+    margin-top: 6vh;
+    margin-bottom: 2vh;
+    padding: 1.5vh 0 1.5vh 0;
+    border: .1vw solid var(--shadow);
+    border-radius: .5vw;
+}
+
+
+/*  "Não possui conta? Cadastre-se." */
+.a-semconta {
+    width: 100%;
+    text-align: center;
+}
+
+.semConta {
+    font-size: 1.1vw;
+    text-align: center;
+    color: var(--colorG);
+}
+
+
+footer {
+    background: var(--footer-bg);
+    color: var(--colorW);
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+}
+
+.group-footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul-footer {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2vw;
+}
+  
+.a-menu-footer {
+    margin: 0 5vw 5vw 0;
+}
+  
+.ul-footer-ec {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    font-size: 1vw;
+}

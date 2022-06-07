@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Entrar</title>
+</head>
+
+<body>
+    <header>
+        <!-- * Nav -->
+        <nav class="nav">
+            <a class="logo" href="/index.html">Your Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="flag" class="flag">
+            <div class="flag-part1"></div>
+            <div class="flag-part2"></div>
+        </div>
+
+        <div class="container">
+            <div class="form">
+                <h3>Digite seus dados</h3>
+
+                <input type="text" name="email" id="email" placeholder="Email">
+                <input type="text" name="senha" id="senha" placeholder="Senha">
+
+
+                <a href="recuperacao.html">
+                    <p class="esqueciS">Esqueci minha senha.</p>
+                </a>
+
+                <input type="submit" id="entrar" value="Entrar"
+                    onclick="window.location.href ='../pages/loginSucesso.html'">
+                <a href="cadastro.html" class="a-semconta">
+                    <p class="semConta">Não possui conta? <u>Cadastre-se.</u></p>
+                </a>
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="group-footer">
+                <ul class="ul-footer">
+                    <li><a class="a-menu-footer" href="#inicio">Início</a></li>
+                    <li><a class="a-menu-footer" href="#sobre">Sobre</a></li>
+                    <li><a class="a-menu-footer" href="#ajude">Ajude</a></li>
+                    <li><a class="a-menu-footer" href="#contatos">Fale conosco</a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>
