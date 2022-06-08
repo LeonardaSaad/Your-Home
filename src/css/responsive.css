@@ -1,6 +1,10 @@
 /* *! RESPOSIVIDADE */
 @media only screen and (max-device-width: 999px) {
     body {font-size: 10px;}
+
+    .logo {
+      font-size: 7vw;
+    }
   
     h2 {
       font-size: 3.5vw;
@@ -185,6 +189,7 @@
     
     .projetoh3 {
       margin-top: 0;
+      margin-left: 5%;
     }
     
     .p-img {
