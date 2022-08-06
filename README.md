@@ -1,4 +1,4 @@
-# Trabalho refugiada
+# Site voltado para refugiadas
  - Aluna: Leonarda Saad Siepierski
  - Turma: CC1Mb
  - Curso: Ciência da Computação
@@ -23,4 +23,4 @@ No [mobile-navbar.js](https://github.com/LeonardaSaad/Your-Home/blob/main/src/sc
 ## Ferramentas:
 - Figma
 - Visual Studio Code
-- Live Server (extensão para VSCode)
+- Live Server (extensão do Visual Studio Code)
