@@ -10,7 +10,7 @@ O trabalho consiste na criação de um página de um site para ajudar refugiadas
 
 ## Criação:
 O design inicial da página foi feito no Figma.
-Projeto inicial: [link para o pdf](https://drive.google.com/file/d/1DaNLjHRW7R6Ap6Hr3jYDhLK3dJQbbH3Q/view?usp=sharing)
+Projeto inicial: [link para o pdf]
 
 Com o design pronto comecei a fazer o site. [Nesse repositório](https://github.com/LeonardaSaad/Your-Home) tem todos os arquivos utilizados.
 
